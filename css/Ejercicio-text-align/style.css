@@ -1,0 +1,26 @@
+html {
+    background-color: bisque;
+}
+
+.box {
+    border: 2px solid black;
+    padding: 10px;
+    width: 200px;
+    margin: 40px auto;
+    background-color: whitesmoke;
+}
+
+.box1 {
+    text-align: left;
+}
+
+.box2 {
+    text-align: center;
+}
+
+.box3 {
+    text-align: right;
+}
+
+
+
