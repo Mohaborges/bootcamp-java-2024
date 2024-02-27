@@ -1,0 +1,12 @@
+.box{
+    margin: 40px; /*Establece un margen exterior*/
+    padding: 10px; /*Define un relleno interior*/
+    outline: 10px dotted greenyellow; /*Establece un contorno de puntos "dotted" de 10 píxeles con color*/
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.box:hover{
+    outline: 10px dotted black; /*Establece un contorno de puntos "dotted" de 10 píxeles con color al estar seleccionado con el ratón*/
+}
