@@ -1,0 +1,9 @@
+p {
+    float: left;
+    width: 50%; /* Ocupa la mitad del ancho disponible */
+}
+
+img {
+    float: right;
+    width: 50%; /* Ocupa la otra mitad del ancho disponible */
+}

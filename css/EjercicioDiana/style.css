@@ -1,0 +1,110 @@
+.diana {
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#anillo1 {
+    width: 400px;
+    height: 400px;
+    top: 50px;
+    left: 50px;
+    background-color: rgb(176, 173, 173);
+}
+
+#anillo2 {
+    left: 70px;
+    top: 70px;
+    width: 360px;
+    height: 360px;
+    background: linear-gradient(rgb(109, 109, 114), rgba(93, 92, 92, 0.484));
+}
+
+#anillo3,
+#anillo5,
+#anillo7,
+#anillo9 {
+    background-color: red;
+}
+
+#anillo4,
+#anillo6,
+#anillo8 {
+    background-color: white;
+}
+
+#anillo3 {
+    left: 80px;
+    top: 80px;
+    width: 340px;
+    height: 340px;
+}
+
+#anillo4 {
+    top: 100px;
+    width: 300px;
+    height: 300px;
+    left: 100px;
+}
+
+#anillo5 {
+    top: 125px;
+    width: 250px;
+    height: 250px;
+    left: 125px;
+}
+
+#anillo6 {
+    top: 150px;
+    width: 200px;
+    height: 200px;
+    left: 150px;
+}
+
+#anillo7 {
+    top: 175px;
+    width: 150px;
+    height: 150px;
+    left: 175px;
+}
+
+#anillo8 {
+    top: 200px;
+    width: 100px;
+    height: 100px;
+    left: 200px;
+}
+
+#anillo9 {
+    top: 225px;
+    width: 50px;
+    height: 50px;
+    left: 225px;
+}
+
+#anillo10 {
+    width: 20px;
+    height: 20px;
+    top: 235px;
+    left: 235px;
+    background-color: red;
+}
+
+#linia1{
+    height: 360px;
+    border-left: 2px solid black;
+    top: 70px;
+    position: absolute;
+    left: 249px;
+}
+
+#linia2{
+    width: 360px;
+    border-bottom: 2px solid black;
+    top: 249px;
+    position: absolute;
+    left: 70px;
+}
