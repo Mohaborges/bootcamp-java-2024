@@ -1,0 +1,40 @@
+.cuadrado {
+    width: 200px;
+    margin: 90px;
+    height: 200px;
+    position: relative; 
+    background-color: red;
+}
+
+.circulos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    background-color: greenyellow;
+    border: 2px solid black;
+}
+
+#box1 {
+    top: -20px;
+    left: -20px;
+}
+
+#box2 {
+    top: -20px;
+    right: -20px;
+}
+
+#box3 {
+    bottom: -20px;
+    left: -20px;
+}
+
+#box4 {
+    bottom: -20px;
+    right: -20px;
+}
