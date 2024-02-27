@@ -1,0 +1,9 @@
+p{
+    background-color: #acfe30; /*Establece el color*/
+    height: 200px;  /*Especifica la altura*/
+    width: 400px;  /*Especifica el ancho*/
+    overflow: hidden; /*Oculta cualquier contenido que desborde las dimensiones especificadas */
+}
+.parrafo{
+    overflow: auto; /*Especifica que si el contenido desborda las dimensiones del elemento, se debe mostrar con una barra de desplazamiento*/
+}
