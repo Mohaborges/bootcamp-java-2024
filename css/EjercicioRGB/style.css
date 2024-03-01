@@ -1,0 +1,54 @@
+p {
+    text-align: center;
+}
+
+span {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.container-1,
+.container-2,
+.container-3,
+.container-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.circuloRojo,
+.circuloVerde,
+.circuloAzul,
+.circuloMagenta,
+.circuloAqua,
+.circuloAmarillo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Asegura que el elemento sea un círculo */
+    margin: 0 10px; /* Agrega un margen horizontal de 10px entre los círculos */
+}
+
+.circuloRojo {
+    background-color: rgb(255, 0, 0);
+}
+
+.circuloVerde {
+    background-color: rgb(0, 255, 0);
+}
+
+.circuloAzul {
+    background-color: rgb(0, 0, 255);
+}
+
+.circuloMagenta {
+    background-color: rgb(255, 0, 255);
+}
+
+.circuloAqua {
+    background-color: rgb(0, 255, 255);
+}
+
+.circuloAmarillo {
+    background-color: rgb(255, 255, 0);
+}
