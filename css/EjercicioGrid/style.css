@@ -1,0 +1,99 @@
+/*MOBILE*/
+@media only screen and (max-width: 425px) {
+    body {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del flujo a columnas */
+    }
+    
+    .Header,
+    .Menu,
+    .Hero,
+    .Main,
+    .Banner,
+    .Extra,
+    .Image {
+        width: 100%;
+        margin: 0 auto; /* Centra los divs horizontalmente */
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        text-align: center; /* Centra el texto horizontalmente */
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+    .Header {
+        background-color: #0F1629;
+        order: 1;
+        color: white;
+        height: 6vh;
+    }
+
+    .Menu {
+        background-color: #F03D50;
+        order: 2;
+        color: white;
+        height: 6vh;
+    }
+
+    .Hero {
+        background-color: #4F86C7;
+        order: 3;
+        color: white;
+        height: 26vh;
+    }
+
+    .Main {
+        background-color: #24344B;
+        order: 4;
+        color: white;
+        height: 26vh;
+    }
+
+    .Banner {
+        background-color: #FFD06A;
+        order: 5;
+        color: black;
+        height: 12vh;
+    }
+
+    .Extra {
+        background-color: #4EBC97;
+        order: 6;
+        color: black;
+        height: 12vh;
+    }
+
+    .Image {
+        background-color: #C1E3E5;
+        order: 7;
+        color: black;
+        height: 12vh;
+    }
+
+}
+
+/*TABLET*/
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .Container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .Header { grid-area: header; }
+    .Menu { grid-area: menu; }
+    .Hero { grid-area: hero; }
+    .Main { grid-area: main; }
+    .Banner { grid-area: banner; }
+    .Extra { grid-area: extra; }
+    .Image { grid-area: image; }
+    
+    .grid-container {
+    grid-template-areas:
+        'header header header'
+        'hero hero hero'
+        'menu main main'
+        'menu banner banner'
+        'menu extra image';
+    }
+}
