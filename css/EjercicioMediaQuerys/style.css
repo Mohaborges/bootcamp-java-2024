@@ -2,51 +2,236 @@ body, html {
     margin: 10px;
 }
 
-.header {
-    display: flex;
-    gap: 10px;
+/* Estilos que se aplicarán cuando el ancho de la pantalla sea de 0px a 320px */
+@media only screen and (max-width: 320px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .contenedor-header-1 {
+        background-color: #FEA432;
+        width: 100%;
+        height: 6vh;
+    }
+    
+    .contenedor-header-2 {
+        background-color: #FEA432;
+        width: 100%;
+        height: 6vh;
+    }
+
+    .contenedor-nav-1 {
+        background-color: #DBEC00;
+        width: 100%;
+        height: 8vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .contenedor-main-1 {
+        background-color: #4A89D0;
+        width: 100%;
+        height: 20vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-main-2 {
+        background-color: #4A89D0;
+        width: 100%;
+        height: 20vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-main-3 {
+        background-color: #4A89D0;
+        width: 100%;
+        height: 20vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
-@media (width <= 320px) {
+/* Estilos que se aplicarán cuando el ancho de la pantalla sea de 320px a 768px */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
     .contenedor-header-1 {
-        background-color: rgb(27, 45, 234);
+        background-color: #FEA432;
+        width: 100%;
+        height: 10vh;
+    }
+    
+    .contenedor-header-2 {
+        background-color: #FEA432;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .contenedor-nav-1 {
+        background-color: #DBEC00;
+        width: 100%;
+        height: 20vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-main-1 {
+        background-color: #4A89D0;
+        width: 100%;
+        height: 20vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-main-2 {
+        background-color: #4A89D0;
+        width: 100%;
+        height: 20vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-main-3 {
+        background-color: #4A89D0;
+        width: 100%;
+        height: 20vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-footer-1 {
+        background-color: #E3E3E3;
+        width: 50%;
+        height: 22vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-footer-2 {
+        background-color: #E3E3E3;
+        width: 50%;
+        height: 22vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-footer-3 {
+        background-color: #E3E3E3;
+        width: 50%;
+        height: 22vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-footer-4 {
+        background-color: #E3E3E3;
+        width: 25%;
+        height: 22vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos que se aplicarán cuando el ancho de la pantalla sea de 768px a 1024px o más */  
+@media only screen and (min-width: 768px) {
+    .header {
+        display: flex;
+        gap: 10px;
+    }
+
+    .nav {
+        display: flex;
+        gap: 10px;
+    }
+
+    .main {
+        display: flex;
+        gap: 10px;
+    }
+
+    .footer {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .contenedor-header-1 {
+        background-color: #FEA432;
         width: 50%;
         height: 10vh;
     }
     
     .contenedor-header-2 {
-        background-color: rgb(33, 30, 241);
+        background-color: #FEA432;
         width: 50%;
         height: 10vh;
     }
-}
 
-@media (320px <= width <= 768px) {
-    .contenedor-header-1 {
-        background-color: rgb(6, 184, 0);
-        width: 50%;
-        height: 10vh;
+    .contenedor-nav-1 {
+        background-color: #DBEC00;
+        width: 100%;
+        height: 45vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-main-1 {
+        background-color: #4A89D0;
+        width: 33%;
+        height: 30vh;
+    }
+
+    .contenedor-main-2 {
+        background-color: #4A89D0;
+        width: 33%;
+        height: 30vh;
+    }
+
+    .contenedor-main-3 {
+        background-color: #4A89D0;
+        width: 33%;
+        height: 30vh;
+    }
+
+    .contenedor-footer-1 {
+        background-color: #E3E3E3;
+        width: 25%;
+        height: 22vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-footer-2 {
+        background-color: #E3E3E3;
+        width: 25%;
+        height: 22vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-footer-3 {
+        background-color: #E3E3E3;
+        width: 25%;
+        height: 22vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-footer-4 {
+        background-color: #E3E3E3;
+        width: 25%;
+        height: 22vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     
-    .contenedor-header-2 {
-        background-color: rgb(60, 214, 25);
-        width: 50%;
-        height: 10vh;
-    }
-}
-
-@media (1024px <= width >= 1024px) {
-    .contenedor-header-1 {
-        background-color: rgb(254, 164, 50);
-        width: 50%;
-        height: 10vh;
-    }
-    
-    .contenedor-header-2 {
-        background-color: rgb(254, 164, 50);
-        width: 50%;
-        height: 10vh;
-    }
 }
 
 
