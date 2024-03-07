@@ -1,8 +1,174 @@
 /*MOBILE*/
 @media only screen and (max-width: 425px) {
-    body {
-        display: flex;
-        flex-direction: column; /* Cambia la dirección del flujo a columnas */
+body {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flujo a columnas */
+}
+
+.Header,
+.Menu,
+.Hero,
+.Main,
+.Banner,
+.Extra,
+.Image {
+    width: 100%;
+    margin: 0 auto; /* Centra los divs horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Header {
+    background-color: #0f1629;
+    order: 1;
+    color: white;
+    height: 6vh;
+}
+
+.Menu {
+    background-color: #f03d50;
+    order: 2;
+    color: white;
+    height: 6vh;
+}
+
+.Hero {
+    background-color: #4f86c7;
+    order: 3;
+    color: white;
+    height: 26vh;
+}
+
+.Main {
+    background-color: #24344b;
+    order: 4;
+    color: white;
+    height: 26vh;
+}
+
+.Banner {
+    background-color: #ffd06a;
+    order: 5;
+    color: black;
+    height: 12vh;
+}
+
+.Extra {
+    background-color: #4ebc97;
+    order: 6;
+    color: black;
+    height: 12vh;
+}
+
+.Image {
+    background-color: #c1e3e5;
+    order: 7;
+    color: black;
+    height: 12vh;
+}
+}
+
+/*TABLET*/
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+.Container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    "header header header"
+    "hero hero hero"
+    "menu main main"
+    "menu banner banner"
+    "menu extra image";
+}
+
+.Header,
+.Menu,
+.Hero,
+.Main,
+.Banner,
+.Extra,
+.Image {
+    width: 100%;
+    margin: 0 auto; /* Centra los divs horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Header {
+    grid-area: header;
+    background-color: #0f1629;
+    order: 1;
+    color: white;
+    height: 6vh;
+}
+
+.Hero {
+    grid-area: hero;
+    background-color: #4f86c7;
+    order: 2;
+    color: white;
+    height: 32vh;
+}
+
+.Menu {
+    grid-area: menu;
+    background-color: #f03d50;
+    order: 3;
+    color: white;
+    height: 60vh;
+}
+
+.Main {
+    grid-area: main;
+    background-color: #24344b;
+    order: 4;
+    color: white;
+    height: 31vh;
+}
+.Banner {
+    grid-area: banner;
+    background-color: #ffd06a;
+    order: 5;
+    color: black;
+    height: 14vh;
+}
+.Extra {
+    grid-area: extra;
+    background-color: #4ebc97;
+    order: 6;
+    color: black;
+    height: 15vh;
+}
+.Image {
+    grid-area: image;
+    background-color: #c1e3e5;
+    order: 7;
+    color: black;
+    height: 15vh;
+}
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 768px) {
+    .Container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+        "header menu menu menu"
+        "hero hero hero hero"
+        "main main vacio image"
+        "main main vacio extra"
+        "banner banner banner banner";
+    }
+
+    .vacio {
+
     }
     
     .Header,
@@ -18,82 +184,60 @@
         justify-content: center; /* Centra horizontalmente */
         align-items: center; /* Centra verticalmente */
         text-align: center; /* Centra el texto horizontalmente */
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-
-
+    
     .Header {
-        background-color: #0F1629;
+        grid-area: header;
+        background-color: #0f1629;
         order: 1;
         color: white;
         height: 6vh;
     }
-
+    
     .Menu {
-        background-color: #F03D50;
+        grid-area: menu;
+        background-color: #f03d50;
         order: 2;
         color: white;
         height: 6vh;
     }
-
+    
     .Hero {
-        background-color: #4F86C7;
+        grid-area: hero;
+        background-color: #4f86c7;
         order: 3;
         color: white;
-        height: 26vh;
+        height: 45vh;
     }
 
     .Main {
-        background-color: #24344B;
+        grid-area: main;
+        background-color: #24344b;
         order: 4;
         color: white;
-        height: 26vh;
+        height: 31vh;
     }
-
     .Banner {
-        background-color: #FFD06A;
+        grid-area: banner;
+        background-color: #ffd06a;
         order: 5;
         color: black;
-        height: 12vh;
+        height: 15.5vh;
     }
-
     .Extra {
-        background-color: #4EBC97;
+        grid-area: extra;
+        background-color: #4ebc97;
         order: 6;
         color: black;
-        height: 12vh;
+        height: 15.5vh;
     }
-
     .Image {
-        background-color: #C1E3E5;
+        grid-area: image;
+        background-color: #c1e3e5;
         order: 7;
         color: black;
-        height: 12vh;
-    }
-
-}
-
-/*TABLET*/
-@media only screen and (min-width: 425px) and (max-width: 768px) {
-    .Container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
-
-    .Header { grid-area: header; }
-    .Menu { grid-area: menu; }
-    .Hero { grid-area: hero; }
-    .Main { grid-area: main; }
-    .Banner { grid-area: banner; }
-    .Extra { grid-area: extra; }
-    .Image { grid-area: image; }
-    
-    .grid-container {
-    grid-template-areas:
-        'header header header'
-        'hero hero hero'
-        'menu main main'
-        'menu banner banner'
-        'menu extra image';
+        height: 15.5vh;
     }
 }
+
