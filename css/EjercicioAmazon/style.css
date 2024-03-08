@@ -1,0 +1,243 @@
+/* Importa la fuente Open Sans desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+/* Reseteo de estilos para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; /* Establece la fuente predeterminada */
+}
+
+/* Estilos para el elemento html */
+html {
+  scroll-behavior: smooth; /* Agrega desplazamiento suave */
+}
+
+/* Estilos para enlaces */
+a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #fff; /* Establece el color de los enlaces */
+}
+
+/* Estilos para enlaces al pasar el ratón por encima */
+a:hover {
+  color: #ddd; /* Cambia el color de los enlaces al pasar el ratón por encima */
+}
+
+/* Estilos para la sección de encabezado o barra de navegación */
+header {
+  width: 100%;
+  background-color: #0f1111;
+}
+
+/* Estilos para la barra de navegación */
+.barra-navegacion {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #fff;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Estilos para el logo de navegación */
+.logotipo-amazon img {
+  margin-top: 10px;
+  width: 128px;
+}
+
+/* Estilos para la dirección de entrega */
+.direccion .entrega {
+  margin-left: 20px;
+  font-size: 0.75rem;
+  color: #ccc;
+}
+
+/* Estilos para el icono del mapa */
+.direccion .icono-mapa {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para la barra de búsqueda */
+.busqueda {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 620px;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+}
+
+/* Estilos para el selector de búsqueda */
+.seleccion-busqueda {
+  background: #f3f3f3;
+  width: 50px;
+  text-align: start;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: none;
+}
+
+/* Estilos para el campo de entrada de búsqueda */
+.entrada-busqueda {
+  max-width: 600px;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+/* Estilos para el icono de búsqueda */
+.icono-busqueda {
+  max-width: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background: #febd68;
+  color: #000;
+  cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* Estilos para los textos de inicio de sesión y devoluciones */
+.iniciar-sesion p,
+.devoluciones p {
+  font-size: 0.75rem;
+}
+
+/* Estilos para los textos de inicio de sesión y devoluciones */
+.iniciar-sesion,
+.devoluciones span {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Estilos para el carrito */
+.carrito {
+  display: flex;
+}
+
+/* Estilos para el icono del carrito */
+.carrito .icono-carrito {
+  font-size: 2.5rem;
+}
+
+/* Estilos para el texto del carrito */
+.carrito p {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+/* Estilos para el menu */
+.menu {
+  padding: 10px 20px;
+  background: #222f3d;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+/* Estilos para el contenido del menu */
+.contenido-menu {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos para el panel */
+.panel {
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para los textos en el panel */
+.panel span {
+  margin-right: 7px;
+}
+
+/* Estilos para los enlaces */
+.enlaces {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+/* Estilos para los enlaces */
+.enlaces a {
+  padding: 10px 0;
+}
+
+/* Estilos para los enlaces de ofertas */
+.deals a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Estilos para la sección de héroe */
+.seccion-main {
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Estilos para el pie de página */
+.titulo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #37475a;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  height: 60px;
+}
+
+/* Estilos para los elementos del pie de página */
+.elementos-footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+  background: #232f3e;
+}
+
+/* Estilos para los títulos del pie de página */
+.elementos-footer h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 20px 0 10px 0;
+}
+
+/* Estilos para las listas del pie de página */
+.elementos-footer ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los enlaces del pie de página */
+.elementos-footer li a {
+  color: #ddd;
+  font-size: 0.875rem;
+}
+
+/* Estilos para los enlaces del pie de página al pasar el ratón por encima */
+.elementos-footer li a:hover {
+  text-decoration: underline;
+}
