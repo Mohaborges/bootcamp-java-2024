@@ -1,0 +1,51 @@
+/*TABLET*/
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+    .Container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-areas:
+        "header header header header header header header";
+    }
+
+    .Header {
+        grid-area: header;
+        background-color: #131921;
+        color: white;
+        height: 8vh;
+    }
+}    
+
+/*DESKTOP*/
+@media only screen and (min-width: 768px) {
+    .Container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-areas:
+        "header header header header header header header";
+    }
+
+    .Header {
+        grid-area: header;
+        background-color: #131921;
+        color: white;
+        height: 8vh;
+    }
+
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 425px) {
+    .Container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-areas:
+        "header header header header header header header";
+    }
+
+    .Header {
+        grid-area: header;
+        background-color: #131921;
+        color: white;
+        height: 9vh;
+    }
+}
