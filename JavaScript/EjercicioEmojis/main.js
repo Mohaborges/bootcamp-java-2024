@@ -66,7 +66,34 @@ if (array4.includes('🍓')) {
     console.log("No existe ninguna fresa en el array");
 }
 
+console.log("Añade el siguiente icono 🥵 inmediatamente después del cada 🌶️ en el siguiente array: " + array5);
 
+const newArray5 = array5.map(item => { // Recorremos el array5 y lo guardamos en un nuevo array 
+    if (item === '🥛') {
+        return item; // Si el elemento es 🥛, no se modifica
+    } else {
+        if (item === '🌶️') { // Si el elemento es 🌶️
+            return item + '🥵'; // Se añade 🥵 después
+        } else {
+            return item; // Si no es 🌶️, el elemento permanece igual
+        }
+    }
+});
 
+console.log(newArray5);
 
+console.log("Añade una 🃏 entre medio de dos cartas. En el siguiente array: " + array6);
+
+const newArray6 = [];
+
+array6.forEach((icono, index) => {
+    newArray6.push(icono); // Agregamos la carta actual al nuevo array
+    
+    // Verificamos si la carta actual y la siguiente son '🎴'
+    if (icono === '🎴' && array6[index + 1] === '🎴') {
+        newArray6.push('🃏'); // Si es así, agregamos la carta comodín
+    }
+});
+
+console.log(newArray6);
 
