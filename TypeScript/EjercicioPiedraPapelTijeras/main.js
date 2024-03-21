@@ -12,33 +12,33 @@ var Manos;
     Manos["Papel"] = "\uD83E\uDD1A";
     Manos["Tijera"] = "\u270C\uFE0F";
 })(Manos || (Manos = {}));
-// Función para que la computadora seleccione una opción aleatoria
-function seleccionarManosComputadora() {
+// Función para que el Ordenador seleccione una opción aleatoria
+function seleccionarManosOrdenador() {
     const Manoses = [Manos.Piedra, Manos.Papel, Manos.Tijera];
     const indice = Math.floor(Math.random() * Manoses.length);
     return Manoses[indice];
 }
 // Función para determinar el resultado del juego
-function determinarGanador(ManosJugador, ManosComputadora) {
-    if ((ManosJugador === Manos.Piedra && ManosComputadora === Manos.Tijera) ||
-        (ManosJugador === Manos.Papel && ManosComputadora === Manos.Piedra) ||
-        (ManosJugador === Manos.Tijera && ManosComputadora === Manos.Papel)) {
-        return "¡Ganaste!";
+function determinarGanador(ManosJugador, ManosOrdenador) {
+    if ((ManosJugador === Manos.Piedra && ManosOrdenador === Manos.Tijera) ||
+        (ManosJugador === Manos.Papel && ManosOrdenador === Manos.Piedra) ||
+        (ManosJugador === Manos.Tijera && ManosOrdenador === Manos.Papel)) {
+        return "¡Has ganado!";
     }
-    else if (ManosJugador === ManosComputadora) {
+    else if (ManosJugador === ManosOrdenador) {
         return "¡Empate!";
     }
     else {
-        return "¡La computadora gana!";
+        return "¡Has perdido!";
     }
 }
 // Función principal para ejecutar el juego
 function jugarPiedraPapelTijera(ManosJugador) {
-    const ManosComputadora = seleccionarManosComputadora();
-    const resultado = determinarGanador(ManosJugador, ManosComputadora);
+    const ManosOrdenador = seleccionarManosOrdenador();
+    const resultado = determinarGanador(ManosJugador, ManosOrdenador);
     // Mostrar los resultados en la pantalla
     document.write(`<h2>Jugador: ${ManosJugador}</h2>`);
-    document.write(`<h2>Computadora: ${ManosComputadora}</h2>`);
+    document.write(`<h2>Ordenador: ${ManosOrdenador}</h2>`);
     document.write(`<h2>Resultado: ${resultado}</h2>`);
 }
 // Ejemplo de uso
