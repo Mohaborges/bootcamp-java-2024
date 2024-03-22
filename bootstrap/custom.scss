@@ -1,0 +1,19 @@
+// Importa Bootstrap
+@import "./node_modules/bootstrap/scss/bootstrap";
+// Importa las funciones de Sass de Bootstrap
+@import './node_modules/bootstrap/scss/functions';
+// Importa las variables de Sass de Bootstrap
+@import './node_modules/bootstrap/scss/variables';
+// Importa los mixins de Sass de Bootstrap
+@import './node_modules/bootstrap/scss/mixins';
+
+@include media-breakpoint-between(xs, md) {
+    .container-fluid {
+        background-color: violet;
+    }
+}
+@include media-breakpoint-between(md, xxxl) {
+    .container-fluid {
+        background-color: green;
+    }
+}
